@@ -1,0 +1,16 @@
+/* parametros */
+@charset "UFT-8";
+/*configurações globais */
+/*mostrar primeiro sem as configurações globais*/
+*{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(90deg,#0869A6, #16B4F2 #0388A6);
+}
+main{ /*define a main, caixa principal da pagina*/
+background-color: white;/*cor de fundo da caixa*/
+box-shadow: 30px 30px 30px #0869A6; /* define uma sombra, os parametros:
+tamanho pra baixo, tamanho para o lado, espalhamento da sombra, cor*/
+/*pode trabalhar a sombra mais transparentee menos gritante*/}
