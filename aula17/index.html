@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+
+        main{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .dados{
+            border: 2px solid black;
+            border-radius:  10px;
+            padding: 10px;
+            height: 400px;
+            width: 400px;
+        }
+
+        .login{
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            height: 200px;
+            width: 400px;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Formulario</h2>
+    <div class="dados">
+        <h1>Dados pessoais</h1>
+        <form action="processarform.php"method="post">
+            <label for="Nome">nome:</label>
+            <input type="text" id="nome01" size="40" maxlength="30"><br><br>
+            <label for="Idade">idade:</label>
+            <input type="text" id="idade"idade="idade"><br><br>
+            <label for="E-mail">E-mail:</label>
+            <input type="email" id="email01" size="40" maxlength="30"><br><br>
+            <label for="cor">Escolha uma cor:</label>
+            <input type="color">
+            <br><br>
+            <label for="datahora">data e hora:</label>
+            <input type="date" required>
+            <input type="time" name="time" id="time"><br><br>
+            <label for="">lampadas em leds: </label>
+            <select name="lampadas" size="01">
+                <option value="">selecione</option>
+                <option value="led H4">led H4</option>
+
+            </select>
+            <br>
+        </form>
+    </div>
+    <div class="login">
+        <h1>login</h1>
+        <form action="processarform.phd" method="post">
+            <label for="E-mail">e-mail</label>
+            <input type="email" id="email01" size="40" maxlength="30"><br><br>
+
+             <label for="senha">senha</label>
+             <input type="senha" id="senha01" size="40" maxlength="30"><br><br>
+        </form>
+         
+    </div>
+    
+</body>
+</html>
