@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula19</title>
+</head>
+<body>
+    <div>
+        <h2>mostrar idade</h2>
+        <h3>regras</h3>
+        <p>1. idade menor que 0 - Idade invalida</p>
+        <p>2. idade igual a 0 - e recem nascido</p>
+        <p>3. idade maior que 0 e menor que 10 anos - é uma criança</p>
+        <p>4. idade maior que 9 e menor que 16 anos - é uma adolescente</p>
+        <p>5. idade maior que 15 e menor que 25 anos - é um jovem</p>
+        <p>6. idade maior que 24 e menor que 60 anos - é um adulto</p>
+        <p>7. idade maior que 59 anos - é um idoso</p>
+        <p>8. idade diferente disso - não digitou a idade</p>
+    </div>
+    <div>
+        <label for="digiteidade">digite a idade</label>
+        <input type="number" name="digiteidade" id="inputUsuario" size="60" maxlength="100" value="" placeholder="digite a idade">
+        <button onclick="enviarresposta()">identificar</button>
+        <input id="InputUsuario" size="60"> <button onclick="enviaResposta()">enviar</button>
+        <br>
+        <script type="text/javaScript">
+            function enviaResposta() {
+                var IU = document.getElementById('inputUsuario').value;
+                window.alert( 'foi digitado' + IU )
+                
+            }
+        </script>
+    </div>
+    <div></div>
+    
+</body>
+</html>
